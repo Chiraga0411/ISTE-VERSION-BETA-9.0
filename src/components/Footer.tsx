@@ -7,14 +7,14 @@ const CONTACTS = [
 ];
 
 const SOCIALS = [
-  { Icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-  { Icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-  { Icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+  { Icon: Instagram, href: 'https://www.instagram.com/istemanit/', label: 'Instagram' },
+  { Icon: Facebook, href: 'https://www.facebook.com/ISTESCMANIT', label: 'Facebook' },
+  { Icon: Linkedin, href: 'https://www.linkedin.com/company/iste-sc-manit/posts/?feedView=all', label: 'LinkedIn' },
 ];
 
 const BOTTOM_LINKS = [
-  { label: 'Code Of Conduct Devfolio', href: '#' },
-  { label: 'Rulebook', href: '#' },
+  { label: 'Code Of Conduct Devfolio', href: 'https://devfolio.co/code-of-conduct' },
+  { label: 'Rulebook', href: 'https://version-beta-main.vercel.app/Images/VBrulebook-2024.pdf' },
 ];
 
 export default function Footer() {
@@ -40,15 +40,15 @@ export default function Footer() {
             <div className="space-y-4">
               {CONTACTS.map((c) => (
                 <div key={c.name} className="flex items-center gap-3">
-                  <Phone className="h-4 w-4 flex-shrink-0 text-matrix-400" />
-                  <span className="font-mono text-sm text-white/85">{c.name}</span>
-                  <span className="font-mono text-sm text-white/60">{c.phone}</span>
+                  <Phone className="h-5 w-5 flex-shrink-0 text-matrix-400" />
+                  <span className="font-mono text-base text-white/85">{c.name}</span>
+                  <span className="font-mono text-base text-white/60">{c.phone}</span>
                 </div>
               ))}
 
               <div className="flex items-start gap-3 pt-1">
-                <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-matrix-400" />
-                <span className="font-mono text-sm leading-relaxed text-white/70">
+                <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-matrix-400" />
+                <span className="font-mono text-base leading-relaxed text-white/70">
                   Maulana Azad National Institute Of Technology Bhopal, 462003
                   (M.P.)
                 </span>
@@ -57,9 +57,9 @@ export default function Footer() {
               <a
                 href="mailto:istescmanit@gmail.com"
                 data-cursor="hover"
-                className="flex items-center gap-3 font-mono text-sm text-white/70 transition-colors hover:text-matrix-400"
+                className="flex items-center gap-3 font-mono text-base text-white/70 transition-colors hover:text-matrix-400"
               >
-                <Mail className="h-4 w-4 flex-shrink-0 text-matrix-400" />
+                <Mail className="h-5 w-5 flex-shrink-0 text-matrix-400" />
                 istescmanit@gmail.com
               </a>
             </div>
@@ -79,10 +79,10 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor="hover"
-                  className="group flex items-center gap-3 font-mono text-sm text-white/85 transition-colors hover:text-matrix-400"
+                  className="group flex items-center gap-3 font-mono text-base text-white/85 transition-colors hover:text-matrix-400"
                 >
-                  <span className="flex h-9 w-9 items-center justify-center border border-matrix-500/40 bg-matrix-950/40 transition-colors group-hover:border-matrix-400">
-                    <Icon className="h-4 w-4 text-matrix-400" />
+                  <span className="flex h-10 w-10 items-center justify-center border border-matrix-500/40 bg-matrix-950/40 transition-colors group-hover:border-matrix-400">
+                    <Icon className="h-5 w-5 text-matrix-400" />
                   </span>
                   {label}
                 </a>
@@ -96,14 +96,16 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-matrix-500/20 pt-6 font-mono text-sm text-white/60 sm:flex-row"
+          className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-matrix-500/20 pt-8 font-mono text-base text-white/70 sm:flex-row"
         >
           {BOTTOM_LINKS.map((l) => (
             <a
               key={l.label}
               href={l.href}
+              target="_blank"
+              rel="noopener noreferrer"
               data-cursor="hover"
-              className="transition-colors hover:text-matrix-400"
+              className="py-1 transition-colors hover:text-matrix-400"
             >
               {l.label}
             </a>
@@ -111,7 +113,7 @@ export default function Footer() {
         </motion.div>
 
         {/* copyright */}
-        <div className="mt-6 border-t border-matrix-500/15 pt-6 text-center font-mono text-xs text-white/40">
+        <div className="mt-6 border-t border-matrix-500/15 pt-6 text-center font-mono text-sm text-white/40">
           Copyright © 2026 by ISTE SC MANIT . All rights reserved.
         </div>
       </div>

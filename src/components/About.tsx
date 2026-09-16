@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Cpu, Clock, MapPin, Users } from 'lucide-react';
+
 import SectionHeading from './SectionHeading';
 import student from './student.jpg'
 
@@ -39,16 +39,9 @@ function WireCube({ size, className }: { size: number; className?: string }) {
   );
 }
 
-const STATS = [
-  { icon: Clock, label: 'HOURS', value: '36' },
-  { icon: Users, label: 'CODERS', value: '500+' },
-  { icon: Cpu, label: 'TRACKS', value: 'Multi' },
-  { icon: MapPin, label: 'MODE', value: 'Offline' },
-];
-
 export default function About() {
   return (
-    <section id="about" className="section-pad relative overflow-hidden">
+    <section id="about" className="section-pad relative overflow-hidden pb-8 md:pb-12">
       {/* floating 3D shapes */}
       <WireCube
         size={120}
@@ -81,11 +74,8 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="flex flex-col justify-center gap-5"
           >
-            <div className="terminal-window animate-pulse-glow w-full min-w-[40vw] p-10 text-center md:min-w-[440px] md:p-12">
-              <br/><br/><br/><br/>
-              <img src={student} />
-              <br/><br/><br/><br/>
-              
+            <div className="terminal-window animate-pulse-glow w-full h-full flex flex-col justify-center min-w-[40vw] p-4 md:min-w-[440px] md:p-6">
+              <img src={student} className="w-full h-auto rounded-sm" alt="Students" />
             </div>
           </motion.div>
 
@@ -126,27 +116,7 @@ export default function About() {
               thinkers, and entrepreneurs.
             </p>
 
-            {/* stat grid */}
-            <div className="mt-7 grid grid-cols-2 gap-3 md:grid-cols-4">
-              {STATS.map((s, i) => (
-                <motion.div
-                  key={s.label}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.08 }}
-                  className="group border border-matrix-500/25 bg-cyber-ink/60 p-3 text-center transition-all hover:border-matrix-400/60 hover:shadow-[0_0_15px_rgba(0,255,102,0.2)]"
-                >
-                  <s.icon className="mx-auto h-5 w-5 text-matrix-400" />
-                  <div className="mt-2 font-mono text-xl font-bold text-white">
-                    {s.value}
-                  </div>
-                  <div className="font-mono text-[10px] tracking-widest text-white/40">
-                    {s.label}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+
           </motion.div>
         </div>
       </div>

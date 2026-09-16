@@ -13,19 +13,14 @@ type Slide = {
 };
 
 const SLIDES: Slide[] = [
-  { id: 0, label: 'slide-0', caption: 'Project Expo Floor', edition: 'VB 7.0' },
-  { id: 1, label: 'slide-1', caption: 'Closing Night', edition: 'VB 6.0' },
-  { id: 2, label: 'slide-2', caption: 'Hackathon Finals', edition: 'VB 8.0' },
-  { id: 3, label: 'slide-3', caption: 'RoboWars Arena', edition: 'VB 8.0' },
-  { id: 4, label: 'slide-4', caption: 'CTF Warroom', edition: 'VB 7.0' },
-  { id: 5, label: 'slide-5', caption: 'Mentor Session', edition: 'VB 6.0' },
-  { id: 6, label: 'slide-6', caption: 'Winners Crowned', edition: 'VB 9.0' },
-  { id: 7, label: 'slide-7', caption: 'Midnight Fuel', edition: 'VB 7.0' },
   { id: 0, label: 'Session', caption: 'Speaker Session', edition: 'VB 8.0', image: '/images/gallery/1.jpg' },
   { id: 1, label: 'Audience', caption: 'Attentive Minds', edition: 'VB 8.0', image: '/images/gallery/2.jpg' },
   { id: 2, label: 'Opening', caption: 'Inauguration', edition: 'VB 8.0', image: '/images/gallery/3.png' },
   { id: 3, label: 'Winners', caption: 'Winners Crowned', edition: 'VB 8.0', image: '/images/gallery/4.jpg' },
   { id: 4, label: 'Team', caption: 'Team Spirit', edition: 'VB 8.0', image: '/images/gallery/5.jpg' },
+  { id: 5, label: 'Coding', caption: 'Deep in Code', edition: 'VB 8.0', image: '/images/gallery/6.jpg' },
+  { id: 6, label: 'Mentors', caption: 'Mentor Guidance', edition: 'VB 8.0', image: '/images/gallery/7.jpg' },
+  { id: 7, label: 'Prizes', caption: 'Hackathon Prizes', edition: 'VB 8.0', image: '/images/gallery/8.jpg' },
 ];
 
 const AUTO_MS = 3200;
@@ -62,7 +57,7 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="section-pad relative overflow-hidden">
+    <section id="gallery" className="section-pad relative overflow-hidden pb-8 md:pb-12">
       <div className="relative z-10 mx-auto max-w-7xl">
         <SectionHeading
           index="04"
@@ -182,9 +177,6 @@ export default function Gallery() {
             </button>
           </div>
 
-          <p className="mt-4 text-center font-mono text-xs text-white/30">
-            {'> note: replace slide-0 … slide-7 placeholders with event photos via the `image` field'}
-          </p>
 
         </motion.div>
       </div>

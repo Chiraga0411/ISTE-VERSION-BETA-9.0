@@ -39,6 +39,9 @@ export default function Navbar() {
   const go = (href: string) => {
     setOpen(false);
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
   };
 
   return (
@@ -91,12 +94,13 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          onClick={() => setOpen((o) => !o)}
-          className="flex h-11 w-11 items-center justify-center border border-matrix-500/40 text-matrix-400 lg:hidden"
+          type="button"
+          onClick={() => setOpen(!open)}
+          className="flex h-11 w-11 items-center justify-center border border-matrix-500/40 text-matrix-400 lg:hidden pointer-events-auto cursor-pointer"
           data-cursor="hover"
           aria-label="Toggle menu"
         >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {open ? <X className="h-6 w-6 pointer-events-none" /> : <Menu className="h-6 w-6 pointer-events-none" />}
         </button>
       </nav>
 
@@ -114,8 +118,9 @@ export default function Navbar() {
               {LINKS.map((l) => (
                 <li key={l.href}>
                   <button
+                    type="button"
                     onClick={() => go(l.href)}
-                    className={`flex w-full items-center gap-2 border-b border-matrix-500/10 py-3 font-mono text-sm tracking-wider ${
+                    className={`flex w-full items-center gap-2 border-b border-matrix-500/10 py-3 font-mono text-sm tracking-wider pointer-events-auto cursor-pointer ${
                       active === l.href ? 'text-matrix-400' : 'text-white/70'
                     }`}
                   >

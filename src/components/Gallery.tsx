@@ -13,6 +13,14 @@ type Slide = {
 };
 
 const SLIDES: Slide[] = [
+  { id: 0, label: 'slide-0', caption: 'Project Expo Floor', edition: 'VB 7.0' },
+  { id: 1, label: 'slide-1', caption: 'Closing Night', edition: 'VB 6.0' },
+  { id: 2, label: 'slide-2', caption: 'Hackathon Finals', edition: 'VB 8.0' },
+  { id: 3, label: 'slide-3', caption: 'RoboWars Arena', edition: 'VB 8.0' },
+  { id: 4, label: 'slide-4', caption: 'CTF Warroom', edition: 'VB 7.0' },
+  { id: 5, label: 'slide-5', caption: 'Mentor Session', edition: 'VB 6.0' },
+  { id: 6, label: 'slide-6', caption: 'Winners Crowned', edition: 'VB 9.0' },
+  { id: 7, label: 'slide-7', caption: 'Midnight Fuel', edition: 'VB 7.0' },
   { id: 0, label: 'Session', caption: 'Speaker Session', edition: 'VB 8.0', image: '/images/gallery/1.jpg' },
   { id: 1, label: 'Audience', caption: 'Attentive Minds', edition: 'VB 8.0', image: '/images/gallery/2.jpg' },
   { id: 2, label: 'Opening', caption: 'Inauguration', edition: 'VB 8.0', image: '/images/gallery/3.png' },
@@ -131,16 +139,7 @@ export default function Gallery() {
                       </div>
                     )}
 
-                    <span className="slide-label">{s.label}</span>
-                    <span className="slide-index">/ 0{s.id + 1} — REPLACEABLE</span>
 
-                    <div className="absolute inset-x-0 bottom-0 translate-y-0 bg-gradient-to-t from-cyber-black/95 to-transparent p-4 pt-8">
-                      <span className="font-mono text-xs text-matrix-400">{'> '}</span>
-                      <span className="font-mono text-sm text-white/90">{s.caption}</span>
-                      <span className="ml-2 font-mono text-[10px] text-matrix-500/50">
-                        {s.edition}
-                      </span>
-                    </div>
                   </div>
                 </button>
               );
@@ -183,6 +182,9 @@ export default function Gallery() {
             </button>
           </div>
 
+          <p className="mt-4 text-center font-mono text-xs text-white/30">
+            {'> note: replace slide-0 … slide-7 placeholders with event photos via the `image` field'}
+          </p>
 
         </motion.div>
       </div>

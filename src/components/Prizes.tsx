@@ -236,15 +236,7 @@ export default function Prizes() {
           ))}
         </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="mt-8 text-center font-mono text-sm text-white/40"
-        >
-          Build. Break. Debug. Win.
-        </motion.p>
+
       </div>
     </section>
   );

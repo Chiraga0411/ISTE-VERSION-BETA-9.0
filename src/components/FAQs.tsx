@@ -100,10 +100,7 @@ function FaqItem({
             className="overflow-hidden"
           >
             <div className="border-t border-matrix-500/20 px-5 py-4">
-              <div className="mb-2 flex items-center gap-2 font-mono text-[10px] text-matrix-500/50">
-                <span className="h-1.5 w-1.5 rounded-full bg-matrix-500/60" />
-                output:
-              </div>
+
               <p className="pl-4 border-l border-matrix-500/30 font-sans text-sm leading-relaxed text-white/70">
                 {faq.a}
               </p>

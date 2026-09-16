@@ -95,9 +95,7 @@ export default function Hero() {
         >
 
           <div className="flex flex-col gap-2">
-            <span className="font-mono tracking-[0.2em] text-matrix-500/60">
-              {'> TIME_REMAINING UntilBreach'}
-            </span>
+
             <Countdown />
           </div>
         </motion.div>
@@ -106,15 +104,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="mt-6 flex w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 font-mono text-sm text-white/60 md:text-base"
+          className="mt-6 flex w-full flex-wrap items-center justify-center gap-x-4 gap-y-2 font-mono text-lg text-white/80 font-bold md:text-2xl"
         >
           <span className="flex items-center gap-1.5">
             <span className="text-matrix-500">{'>_'}</span> Oct 30 — Nov 1, 2026
           </span>
-          <span className="hidden h-4 w-px bg-matrix-500/30 sm:block" />
+          <span className="hidden h-5 w-px bg-matrix-500/50 sm:block" />
           <span>MANIT, Bhopal</span>
-          <span className="hidden h-4 w-px bg-matrix-500/30 sm:block" />
-          <span className="text-matrix-400">Crack the Code</span>
         </motion.div>
 
         <div className="mt-10 flex w-full justify-center">

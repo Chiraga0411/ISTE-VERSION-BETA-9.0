@@ -12,7 +12,7 @@ export default function Hero() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,4,2,0.72), rgba(0,4,2,0.82)), url('/images/hero-bg-hacker.png')`,
+          backgroundImage: `linear-gradient(rgba(0,4,2,0.5), rgba(0,4,2,0.7)), url('/images/hero-bg-hacker.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

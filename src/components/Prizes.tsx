@@ -113,16 +113,6 @@ function PrizeCard({
 
         {/* Status */}
         <div className="flex items-center justify-between font-mono text-[10px] text-white/40">
-          <span
-            className="flex items-center gap-1"
-            style={{ color: prize.accent }}
-          >
-            <span
-              className="h-1.5 w-1.5 rounded-full"
-              style={{ background: prize.accent }}
-            />
-            ACTIVE
-          </span>
           {prize.featured && (
             <span
               className="rounded-sm border px-1.5 py-0.5 tracking-[0.25em]"

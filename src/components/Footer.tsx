@@ -2,8 +2,6 @@ import { motion } from 'framer-motion';
 import { Instagram, Facebook, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 const CONTACTS = [
-  { name: 'Sanjana Malani', phone: '+91 7691929205' },
-  { name: 'Tanishq Dinkar', phone: '+91 9109896779' },
   { name: 'Shresth Srivastava', phone: '+91 8303515089' },
   { name: 'Sarvesh Thapak', phone: '+91 9098448822' }
 

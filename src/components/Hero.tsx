@@ -1,24 +1,7 @@
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Countdown from './Countdown';
 
 export default function Hero() {
-  const isLocal =
-    typeof window !== 'undefined' &&
-    ['localhost', '127.0.0.1'].includes(window.location.hostname);
-
-  useEffect(() => {
-    if (isLocal) return;
-
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, [isLocal]);
 
   return (
     <section
@@ -143,35 +126,26 @@ export default function Hero() {
 
         {/* Registration button */}
         <div className="mt-10 flex w-full justify-center">
-          {isLocal ? (
-            <a
-              href="https://version-beta-9.devfolio.co/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Apply with Devfolio"
-              className="flex items-center justify-center bg-[#3770FF] text-white transition-colors hover:bg-[#2F5FE0]"
-              style={{
-                height: '44px',
-                width: '312px',
-                maxWidth: '100%',
-                borderRadius: '4px',
-                fontFamily: 'Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif',
-                fontSize: '20px',
-                fontWeight: 600,
-                textDecoration: 'none',
-              }}
-            >
-              <img src="/images/devfolio.png" alt="DEVFOLIO LOGO" className="mr-3 h-7 w-7" />
-              Apply with Devfolio
-            </a>
-          ) : (
-            <div
-              className="apply-button"
-              data-hackathon-slug="version-beta-9"
-              data-button-theme="dark"
-              style={{ height: '44px', width: '312px' }}
-            ></div>
-          )}
+          <a
+            href="https://version-beta-9.devfolio.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Apply with Devfolio"
+            className="flex items-center justify-center bg-[#3770FF] text-white transition-colors hover:bg-[#2F5FE0]"
+            style={{
+              height: '44px',
+              width: '312px',
+              maxWidth: '100%',
+              borderRadius: '4px',
+              fontFamily: 'Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif',
+              fontSize: '20px',
+              fontWeight: 600,
+              textDecoration: 'none',
+            }}
+          >
+            <img src="/images/devfolio.png" alt="DEVFOLIO LOGO" className="mr-3 h-7 w-7" />
+            Apply with Devfolio
+          </a>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ import ims from './img/IMS.png';
 import stockgro from './img/stockgro.png';
 
 const SPONSORS = [
-  { name: 'DEVFOLIO', featured: true, img: devfolio, refer: 'https://devfolio.co/' },
+  { name: 'DEVFOLIO LOGO', featured: true, img: devfolio, refer: 'https://devfolio.co/' },
   { name: 'KGEN', featured: false, img: kgen, refer: 'https://kgen.io/' },
   { name: 'IMS', featured: false, img: ims, refer: 'https://www.imsindia.com/' },
   { name: 'STOCKGRO', featured: false, img: stockgro, refer: 'https://www.stockgro.club/' },
@@ -38,11 +38,10 @@ export default function Sponsors() {
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -6 }}
-              className={`group relative flex flex-col items-center justify-center gap-4 border p-8 transition-all ${
-                s.featured
+              className={`group relative flex flex-col items-center justify-center gap-4 border p-8 transition-all ${s.featured
                   ? 'border-matrix-400/50 bg-matrix-950/20 hover:border-matrix-400 hover:shadow-[0_0_30px_rgba(0,255,102,0.3)]'
                   : 'border-matrix-500/25 bg-cyber-ink/60 hover:border-matrix-500/60 hover:shadow-[0_0_20px_rgba(0,255,102,0.2)]'
-              }`}
+                }`}
             >
               {/* <span className="absolute left-3 top-3 font-mono text-[9px] text-matrix-500/40">
                 0{i + 1}
@@ -60,9 +59,8 @@ export default function Sponsors() {
               {/* Company name */}
               <div className="text-center">
                 <div
-                  className={`font-mono text-xl font-extrabold tracking-wide transition-colors ${
-                    s.featured ? 'text-white group-hover:text-matrix-300' : 'text-white/80 group-hover:text-white'
-                  }`}
+                  className={`font-mono text-xl font-extrabold tracking-wide transition-colors ${s.featured ? 'text-white group-hover:text-matrix-300' : 'text-white/80 group-hover:text-white'
+                    }`}
                 >
                   {s.name}
                 </div>

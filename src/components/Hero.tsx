@@ -161,7 +161,7 @@ export default function Hero() {
                 textDecoration: 'none',
               }}
             >
-              <img src="/images/devfolio.png" alt="Devfolio" className="mr-3 h-7 w-7" />
+              <img src="/images/devfolio.png" alt="DEVFOLIO LOGO" className="mr-3 h-7 w-7" />
               Apply with Devfolio
             </a>
           ) : (

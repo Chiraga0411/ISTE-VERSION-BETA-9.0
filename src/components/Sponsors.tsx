@@ -39,8 +39,8 @@ export default function Sponsors() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -6 }}
               className={`group relative flex flex-col items-center justify-center gap-4 border p-8 transition-all ${s.featured
-                  ? 'border-matrix-400/50 bg-matrix-950/20 hover:border-matrix-400 hover:shadow-[0_0_30px_rgba(0,255,102,0.3)]'
-                  : 'border-matrix-500/25 bg-cyber-ink/60 hover:border-matrix-500/60 hover:shadow-[0_0_20px_rgba(0,255,102,0.2)]'
+                ? 'border-matrix-400/50 bg-matrix-950/20 hover:border-matrix-400 hover:shadow-[0_0_30px_rgba(0,255,102,0.3)]'
+                : 'border-matrix-500/25 bg-cyber-ink/60 hover:border-matrix-500/60 hover:shadow-[0_0_20px_rgba(0,255,102,0.2)]'
                 }`}
             >
               {/* <span className="absolute left-3 top-3 font-mono text-[9px] text-matrix-500/40">

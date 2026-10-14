@@ -8,18 +8,17 @@ export default function Hero() {
     ['localhost', '127.0.0.1'].includes(window.location.hostname);
 
   useEffect(() => {
-    const script = document.createElement('script');
+    if (isLocal) return;
 
+    const script = document.createElement('script');
     script.src = 'https://apply.devfolio.co/v2/sdk.js';
     script.async = true;
     script.defer = true;
-
     document.body.appendChild(script);
-
     return () => {
-      script.remove();
+      document.body.removeChild(script);
     };
-  }, []);
+  }, [isLocal]);
 
   return (
     <section
@@ -158,11 +157,11 @@ export default function Hero() {
                 borderRadius: '4px',
                 fontFamily: 'Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif',
                 fontSize: '20px',
-                fontWeight: 500,
+                fontWeight: 600,
                 textDecoration: 'none',
               }}
             >
-              <img src="/images/devfolio.png" alt="" className="mr-3 h-7 w-7" />
+              <img src="/images/devfolio.png" alt="Devfolio" className="mr-3 h-7 w-7" />
               Apply with Devfolio
             </a>
           ) : (
@@ -170,7 +169,7 @@ export default function Hero() {
               className="apply-button"
               data-hackathon-slug="version-beta-9"
               data-button-theme="light"
-              style={{ height: '44px', width: '312px', maxWidth: '100%' }}
+              style={{ height: '44px', width: '312px' }}
             ></div>
           )}
         </div>

@@ -1,11 +1,16 @@
 import { motion } from 'framer-motion';
 import { Box } from 'lucide-react';
 import SectionHeading from './SectionHeading';
+import devfolio from './img/devfolio.png';
+import kgen from './img/kgen.png';
+import ims from './img/IMS.png';
+import stockgro from './img/stockgro.png';
 
 const SPONSORS = [
-  { name: 'DEVFOLIO', tier: 'PLATFORM PARTNER', featured: true },
-  { name: 'ETHINDIA', tier: 'ECOSYSTEM PARTNER', featured: false },
-  { name: 'FOLD', tier: 'SUPPORTING PARTNER', featured: false },
+  { name: 'DEVFOLIO', tier: 'PLATFORM PARTNER', featured: true,img:devfolio,refer:'https://devfolio.co/' },
+  { name: 'KGEN', tier: 'ECOSYSTEM PARTNER', featured: false,img:kgen,refer:'https://kgen.io/' },
+  { name: 'IMS', tier: 'SUPPORTING PARTNER', featured: false,img:ims,refer:'https://www.imsindia.com/' },
+  { name: 'STOCKGRO', tier: 'SUPPORTING PARTNER', featured: false ,img:stockgro,refer:'https://www.stockgro.club/'},
 ];
 
 const PAST = ['MLH', 'GitLab', 'GitHub', 'Polygon', 'Replit', 'Echo3D'];
@@ -25,7 +30,7 @@ export default function Sponsors() {
           {SPONSORS.map((s, i) => (
             <motion.a
               key={s.name}
-              href="#"
+              href={s.refer}
               data-cursor="hover"
               initial={{ opacity: 0, scale: 0.92 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -47,8 +52,8 @@ export default function Sponsors() {
                     ? 'border-matrix-400 text-matrix-400'
                     : 'border-matrix-500/40 text-matrix-500/70'
                 }`}
-              >
-                <Box className="h-6 w-6" />
+              > 
+              <img src={s.img} />
               </div>
               <div className="text-center">
                 <div

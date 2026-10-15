@@ -14,7 +14,7 @@ const FAQS = [
   },
   {
     q: 'What is version beta?',
-    a: "Version Beta is a 36-hour offline hackathon powered by MLH, hosted at NIT Bhopal. It's where the brightest tech minds converge to build, break, and ship — all on the NIT-B campus.",
+    a: "Version Beta is a 36-hour offline hackathon, hosted at NIT Bhopal. It's where the brightest tech minds converge to build, break, and ship — all on the NIT-B campus.",
   },
   {
     q: 'Will Hackathon be conducted online?',
@@ -34,11 +34,11 @@ const FAQS = [
   },
   {
     q: 'How would I know if I got selected?',
-    a: 'Shortlisted teams are announced on 20th Oct via email and our social handles. Make sure you check the inbox you registered with — and your spam folder, just in case.',
+    a: 'Shortlisted teams are announced on 24th Oct via email and our social handles. Make sure you check the inbox you registered with — and your spam folder, just in case.',
   },
   {
     q: 'How to participate?',
-    a: 'Register on our Devfolio portal when applications open on 29th Sep. Submit your idea during the ideation phase, and await the shortlist on 20th Oct.',
+    a: 'Register on our Devfolio portal when applications open on 14th Oct. Submit your idea during the ideation phase, and await the shortlist on 24th Oct.',
   },
   {
     q: 'Cost for participation?',

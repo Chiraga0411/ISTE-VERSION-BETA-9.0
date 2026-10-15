@@ -5,24 +5,24 @@ import SectionHeading from './SectionHeading';
 const EVENTS = [
   {
     date: '14th Oct',
-    title: 'Registration Opens',
+    title: 'Registration and Ideation Phase Opens',
     desc: 'The gates lift. Assemble your squad and lock in your slot for the arena.',
     tag: 'REG_OPEN',
   },
   {
-    date: 'Till 22th Oct',
-    title: 'Ideation Phase',
+    date: '22nd Oct',
+    title: 'Registration and Ideation Phase Ends',
     desc: 'Brainstorm, scope, and sharpen your concept. Submit your proposal for review.',
     tag: 'IDEATE',
   },
   {
-    date: '23th Oct',
+    date: '24th Oct',
     title: 'Shortlist Announcement',
     desc: 'Selected teams are revealed. Check your inbox — the subject line says ACCESS GRANTED.',
     tag: 'SHORTLIST',
   },
   {
-    date: '24st Oct',
+    date: '25th Oct',
     title: 'Team Formation',
     desc: 'Finalize your roster. Confirm teammates, roles, and stack before the clock starts.',
     tag: 'TEAM_UP',

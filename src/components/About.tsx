@@ -104,10 +104,10 @@ export default function About() {
               highest caliber from the world of technology and
               entrepreneurship. It is accompanied by a{' '}
               <span className="neon-text font-semibold">36-hour hack-a-thon</span>{' '}
-              powered by MLH, the largest in central India, allowing
+              , the largest in central India, allowing
               participants to test their intelligence, be recognized and get
               rewarded while rubbing shoulders with the offline NIT-B campus
-              experience and real-time guidance from the MLH community.
+              experience .
             </p>
             <p className="font-sans text-base leading-relaxed text-white/70 md:text-lg">
               <span className="font-mono text-matrix-400">{'> '}</span>

@@ -13,20 +13,20 @@ type Prize = {
 const PRIZES: Prize[] = [
   {
     place: '2nd',
-    amount: '₹15,000',
+    amount: '₹10,000',
     icon: Lock,
     accent: '#9ca3af',
   },
   {
     place: '1st',
-    amount: '₹20,000',
+    amount: '₹15,000',
     icon: Trophy,
     accent: '#39ff8f',
     featured: true,
   },
   {
     place: '3rd',
-    amount: '₹10,000',
+    amount: '₹5,000',
     icon: Zap,
     accent: '#cd7f32',
   },
@@ -35,20 +35,20 @@ const PRIZES: Prize[] = [
 const MOB_PRIZES: Prize[] = [
   {
     place: '1st',
-    amount: '₹20,000',
+    amount: '₹15,000',
     icon: Trophy,
     accent: '#39ff8f',
     featured: true,
   },
   {
     place: '2nd',
-    amount: '₹15,000',
+    amount: '₹10,000',
     icon: Lock,
     accent: '#9ca3af',
   },
   {
     place: '3rd',
-    amount: '₹10,000',
+    amount: '₹5,000',
     icon: Zap,
     accent: '#cd7f32',
   },

@@ -4,35 +4,36 @@ import SectionHeading from './SectionHeading';
 
 const EVENTS = [
   {
-    date: '14th Oct',
+    date: '16th Oct',
     title: 'Registration and Ideation Phase Opens',
     desc: 'The gates lift. Assemble your squad and lock in your slot for the arena.',
     tag: 'REG_OPEN',
   },
   {
-    date: '22nd Oct',
+    date: '24th Oct',
     title: 'Registration and Ideation Phase Ends',
     desc: 'Brainstorm, scope, and sharpen your concept. Submit your proposal for review.',
     tag: 'IDEATE',
   },
   {
-    date: '24th Oct',
+    date: '26th Oct',
     title: 'Shortlist Announcement',
     desc: 'Selected teams are revealed. Check your inbox — the subject line says ACCESS GRANTED.',
     tag: 'SHORTLIST',
   },
   {
-    date: '25th Oct',
-    title: 'Team Formation',
-    desc: 'Finalize your roster. Confirm teammates, roles, and stack before the clock starts.',
-    tag: 'TEAM_UP',
-  },
-  {
-    date: '30th Oct — 1st Nov',
-    title: 'Hackathon Weekend',
+    date: '30th Oct',
+    title: 'Hackathon Starts',
     desc: '36 hours. One campus. Zero excuses. Build, break, and ship — live at NIT-B.',
     tag: 'LIVE',
     highlight: true,
+  },
+  {
+    date: '1st Nov',
+    title: 'Hackathon Ends',
+    desc: 'From lines of code to the leaderboard, the results are in!',
+    tag: 'RESULT',
+    
   },
 ];
 
